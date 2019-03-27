@@ -1,0 +1,16 @@
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe.config
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.pdb
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.dll
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.dll
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.dll
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.pdb
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.pdb
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.pdb
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csprojAssemblyReference.cache
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.Properties.Resources.resources
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.GenerateResource.cache
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CoreCompileInputs.cache
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CopyComplete
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.exe
+C:\Users\jonat\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.pdb
