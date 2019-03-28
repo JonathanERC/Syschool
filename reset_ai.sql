@@ -1,0 +1,1 @@
+DBCC CHECKIDENT (cursos, RESEED, 0)
