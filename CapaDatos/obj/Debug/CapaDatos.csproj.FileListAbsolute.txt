@@ -4,3 +4,9 @@ C:\Users\jonat\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csprojAssembl
 C:\Users\jonat\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\jonat\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\jonat\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.pdb
