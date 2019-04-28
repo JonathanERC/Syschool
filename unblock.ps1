@@ -1,0 +1,1 @@
+gci -Recurse "C:\Users\jrondon\source\Unicda\*" | Unblock-File
