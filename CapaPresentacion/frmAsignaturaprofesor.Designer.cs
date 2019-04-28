@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmCursos
+    partial class frmAsignaturaprofesor
     {
         /// <summary>
         /// Required designer variable.
@@ -47,8 +47,10 @@
             this.btnguardar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtnombre_curso = new System.Windows.Forms.TextBox();
-            this.txtid_cursos = new System.Windows.Forms.TextBox();
+            this.txtid_profesor = new System.Windows.Forms.TextBox();
+            this.txtid_asignatura = new System.Windows.Forms.TextBox();
+            this.txtid_asignaturaprofesor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
@@ -69,9 +71,9 @@
             this.label1.Location = new System.Drawing.Point(4, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 25);
+            this.label1.Size = new System.Drawing.Size(272, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cursos";
+            this.label1.Text = "Asignaturas del Profesor";
             // 
             // tabControl1
             // 
@@ -136,9 +138,9 @@
             this.lbltotal.Location = new System.Drawing.Point(353, 99);
             this.lbltotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(83, 13);
+            this.lbltotal.Size = new System.Drawing.Size(91, 13);
             this.lbltotal.TabIndex = 4;
-            this.lbltotal.Text = "Total de cursos:";
+            this.lbltotal.Text = "Total de registros:";
             // 
             // chkeliminar
             // 
@@ -168,7 +170,7 @@
             this.btnbuscar.Location = new System.Drawing.Point(257, 57);
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(123, 22);
+            this.btnbuscar.Size = new System.Drawing.Size(141, 22);
             this.btnbuscar.TabIndex = 2;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
@@ -176,10 +178,10 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(57, 57);
+            this.txtbuscar.Location = new System.Drawing.Point(111, 57);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(161, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(142, 20);
             this.txtbuscar.TabIndex = 1;
             this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
             // 
@@ -189,9 +191,9 @@
             this.label2.Location = new System.Drawing.Point(6, 63);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(101, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "Codigo del profesor:";
             // 
             // tabPage2
             // 
@@ -265,8 +267,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtnombre_curso);
-            this.groupBox1.Controls.Add(this.txtid_cursos);
+            this.groupBox1.Controls.Add(this.txtid_profesor);
+            this.groupBox1.Controls.Add(this.txtid_asignatura);
+            this.groupBox1.Controls.Add(this.txtid_asignaturaprofesor);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(2, 6);
@@ -276,33 +280,51 @@
             this.groupBox1.Size = new System.Drawing.Size(496, 167);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cursos";
+            this.groupBox1.Text = "Asignatura de Profesor";
             // 
-            // txtnombre_curso
+            // txtid_profesor
             // 
-            this.txtnombre_curso.Location = new System.Drawing.Point(181, 109);
-            this.txtnombre_curso.Margin = new System.Windows.Forms.Padding(2);
-            this.txtnombre_curso.Name = "txtnombre_curso";
-            this.txtnombre_curso.Size = new System.Drawing.Size(185, 20);
-            this.txtnombre_curso.TabIndex = 2;
+            this.txtid_profesor.Location = new System.Drawing.Point(143, 110);
+            this.txtid_profesor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid_profesor.Name = "txtid_profesor";
+            this.txtid_profesor.Size = new System.Drawing.Size(94, 20);
+            this.txtid_profesor.TabIndex = 2;
             // 
-            // txtid_cursos
+            // txtid_asignatura
             // 
-            this.txtid_cursos.Location = new System.Drawing.Point(109, 46);
-            this.txtid_cursos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtid_cursos.Name = "txtid_cursos";
-            this.txtid_cursos.Size = new System.Drawing.Size(76, 20);
-            this.txtid_cursos.TabIndex = 2;
+            this.txtid_asignatura.Location = new System.Drawing.Point(143, 77);
+            this.txtid_asignatura.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid_asignatura.Name = "txtid_asignatura";
+            this.txtid_asignatura.Size = new System.Drawing.Size(94, 20);
+            this.txtid_asignatura.TabIndex = 2;
+            // 
+            // txtid_asignaturaprofesor
+            // 
+            this.txtid_asignaturaprofesor.Location = new System.Drawing.Point(143, 47);
+            this.txtid_asignaturaprofesor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid_asignaturaprofesor.Name = "txtid_asignaturaprofesor";
+            this.txtid_asignaturaprofesor.Size = new System.Drawing.Size(76, 20);
+            this.txtid_asignaturaprofesor.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 113);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Código Profesor:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 111);
+            this.label5.Location = new System.Drawing.Point(43, 80);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
+            this.label5.Size = new System.Drawing.Size(96, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Nombre del Curso:";
+            this.label5.Text = "Código Asignatura:";
             // 
             // label4
             // 
@@ -322,7 +344,7 @@
             // 
             this.ttmensaje.IsBalloon = true;
             // 
-            // frmCursos
+            // frmAsignaturaprofesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -331,10 +353,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "frmCursos";
+            this.Name = "frmAsignaturaprofesor";
             this.ShowIcon = false;
-            this.Text = "SYSCHOOL - Cursos";
-            this.Load += new System.EventHandler(this.frmCursos_Load);
+            this.Text = "SYSCHOOL - Asignaturas del Profesor";
+            this.Load += new System.EventHandler(this.frmAsignaturaprofesor_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -363,8 +385,8 @@
         private System.Windows.Forms.Label lbltotal;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtnombre_curso;
-        private System.Windows.Forms.TextBox txtid_cursos;
+        private System.Windows.Forms.TextBox txtid_asignatura;
+        private System.Windows.Forms.TextBox txtid_asignaturaprofesor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btncancelar;
@@ -374,5 +396,7 @@
         private System.Windows.Forms.ErrorProvider erroricono;
         private System.Windows.Forms.ToolTip ttmensaje;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtid_profesor;
+        private System.Windows.Forms.Label label3;
     }
 }

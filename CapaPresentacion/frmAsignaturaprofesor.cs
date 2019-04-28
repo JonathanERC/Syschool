@@ -12,15 +12,15 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmCursos : Form
+    public partial class frmAsignaturaprofesor : Form
     {
         private bool Isnuevo = false;
         private bool Iseditar = false;
 
-        public frmCursos()
+        public frmAsignaturaprofesor()
         {
             InitializeComponent();
-            this.ttmensaje.SetToolTip(this.txtnombre_curso, "Ingrese el Nombre del Curso");
+            this.ttmensaje.SetToolTip(this.txtid_asignatura, "Ingrese el Codigo del Registro");
         }
 
         //Mensaje de confirmacion
@@ -38,15 +38,17 @@ namespace CapaPresentacion
         //Limpiar controles
         private void Limpiar()
         {
-            this.txtnombre_curso.Text = string.Empty;
-            this.txtid_cursos.Text = string.Empty;
+            this.txtid_asignatura.Text = string.Empty;
+            this.txtid_asignaturaprofesor.Text = string.Empty;
+            this.txtid_profesor.Text = string.Empty;
         }
 
         //Habilitar controles
         private void Habilitar(bool valor)
         {
-            this.txtid_cursos.ReadOnly = !valor;
-            this.txtnombre_curso.ReadOnly = !valor;
+            this.txtid_asignaturaprofesor.ReadOnly = !valor;
+            this.txtid_asignatura.ReadOnly = !valor;
+            this.txtid_profesor.ReadOnly = !valor;
         }
 
         //habilitar botones
@@ -80,20 +82,20 @@ namespace CapaPresentacion
         //Mostrar mostrar
         private void Mostrar()
         {
-            this.datalistado.DataSource = Ncursos.Mostrar();
+            this.datalistado.DataSource = Nasignaturaprofesor.Mostrar();
             this.Ocultarcolumnas();
-            lbltotal.Text = "Total de Cursos: " + Convert.ToString(datalistado.RowCount);
+            lbltotal.Text = "Total de Registros: " + Convert.ToString(datalistado.RowCount);
         }
 
         //Buscar nombre
         private void Buscarnombre()
         {
-            this.datalistado.DataSource = Ncursos.Buscarnombre(this.txtbuscar.Text);
+            this.datalistado.DataSource = Nasignaturaprofesor.Buscarnombre(this.txtbuscar.Text);
             this.Ocultarcolumnas();
-            lbltotal.Text = "Total de Cursos: " + Convert.ToString(datalistado.RowCount);
+            lbltotal.Text = "Total de Registros: " + Convert.ToString(datalistado.RowCount);
         }
 
-        private void frmCursos_Load(object sender, EventArgs e)
+        private void frmAsignaturaprofesor_Load(object sender, EventArgs e)
         {
             this.Top = 0;
             this.Left = 0;
@@ -112,8 +114,8 @@ namespace CapaPresentacion
         {
             if (e.ColumnIndex==datalistado.Columns["Eliminar"].Index)
             {
-                DataGridViewCheckBoxCell chkEliminar = (DataGridViewCheckBoxCell)datalistado.Rows[e.RowIndex].Cells["Eliminar"];
-                chkEliminar.Value = !Convert.ToBoolean(chkEliminar.Value);
+                DataGridViewCheckBoxCell chkeliminar = (DataGridViewCheckBoxCell)datalistado.Rows[e.RowIndex].Cells["Eliminar"];
+                chkeliminar.Value = !Convert.ToBoolean(chkeliminar.Value);
             }
         }
 
@@ -134,7 +136,7 @@ namespace CapaPresentacion
             this.Botones();
             this.Limpiar();
             this.Habilitar(true);
-            this.txtnombre_curso.Focus();
+            this.txtid_asignatura.Focus();
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -142,31 +144,31 @@ namespace CapaPresentacion
             try
             {
                 string rpta = "";
-                if (this.txtnombre_curso.Text == string.Empty)
+                if (this.txtid_asignatura.Text == string.Empty || this.txtid_profesor.Text == string.Empty)
                 {
                     Mensajeerror("Verifique que los datos marcados esten completos.");
-                    erroricono.SetError(txtnombre_curso, "Ingrese el Nombre del Curso");
+                    erroricono.SetError(txtid_asignatura, "Ingrese el Codigo del Registro");
                 }
                 else
                 {
                     if (this.Isnuevo)
                     {
-                        rpta = Ncursos.Insertar(this.txtnombre_curso.Text.Trim());
+                        rpta = Nasignaturaprofesor.Insertar(Convert.ToInt32(this.txtid_asignatura.Text.Trim()), (Convert.ToInt32(this.txtid_profesor.Text.Trim())));
                     }
                     else
                     {
-                        rpta = Ncursos.Editar(Convert.ToInt32(this.txtid_cursos.Text), this.txtnombre_curso.Text.Trim());
+                        rpta = Nasignaturaprofesor.Editar((Convert.ToInt32(this.txtid_asignatura.Text.Trim())), (Convert.ToInt32(this.txtid_profesor.Text.Trim())));
                     }
 
                     if (rpta.Equals("Ok"))
                     {
                         if (this.Isnuevo)
                         {
-                            this.Mensajeok("Se ha insertado un Curso.");
+                            this.Mensajeok("Se ha insertado un Registro.");
                         }
                         else
                         {
-                            this.Mensajeok("Se ha actualizado un Curso.");
+                            this.Mensajeok("Se ha actualizado un Registro.");
                         }
                     }
                     else
@@ -188,15 +190,17 @@ namespace CapaPresentacion
 
         private void datalistado_DoubleClick(object sender, EventArgs e)
         {
-            this.txtid_cursos.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["id_curso"].Value);
-            this.txtnombre_curso.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["nombre_curso"].Value);
+            this.txtid_asignaturaprofesor.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["id_asignaturaprofesor"].Value);
+            this.txtid_asignatura.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["id_asignatura"].Value);
+            this.txtid_profesor.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["id_profesor"].Value);
+
 
             this.tabControl1.SelectedIndex = 1;
         }
 
         private void btneditar_Click(object sender, EventArgs e)
         {
-            if (!this.txtid_cursos.Text.Equals(""))
+            if (!this.txtid_asignaturaprofesor.Text.Equals(""))
             {
                 this.Iseditar = true;
                 this.Botones();
@@ -204,7 +208,7 @@ namespace CapaPresentacion
             }
             else
             {
-                this.Mensajeerror("Por favor seleccionar el Curso a Modificar");
+                this.Mensajeerror("Por favor seleccionar el Registro a Modificar");
             }
         }
 
@@ -234,7 +238,7 @@ namespace CapaPresentacion
             try
             {
                 DialogResult Opcion;
-                Opcion = MessageBox.Show("¿Desea eliminar el Curso seleccionado?", "SYSCHOOL", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+                Opcion = MessageBox.Show("¿Desea eliminar el Registro seleccionado?", "SYSCHOOL", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
                 if (Opcion == DialogResult.OK)
                 {
                     String codigo;
@@ -245,11 +249,11 @@ namespace CapaPresentacion
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             codigo = Convert.ToString(row.Cells[1].Value);
-                            rpta = Ncursos.Eliminar(Convert.ToInt32(codigo));
+                            rpta = Nasignaturaprofesor.Eliminar(Convert.ToInt32(codigo));
 
                             if (rpta.Equals("Ok"))
                             {
-                                this.Mensajeok("Se ha eliminado el curso");
+                                this.Mensajeok("Se ha eliminado el Registro");
                             }
                             else
                             {

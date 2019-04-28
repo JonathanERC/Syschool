@@ -12,27 +12,25 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmEstudiantes : Form
+    public partial class frmAsignaturas : Form
     {
-
         private bool IsNuevo = false;
 
         private bool IsEditar = false;
 
-        public frmEstudiantes()
+        public frmAsignaturas()
         {
             InitializeComponent();
-            this.ttMensaje.SetToolTip(this.txtidEstudiante, "Ingrese el Nombre del Estudiante");
+            this.ttMensaje.SetToolTip(this.txtNombreAsignatura, "Ingrese el Nombre de la Asignatura");
 
         }
-
 
         //Mostrar Mensaje de Confirmación
 
         private void MensajeOk(string mensaje)
         {
             MessageBox.Show(mensaje, "SYSCHOOL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+
         }
 
         //Mostrar Mensaje de Error  
@@ -46,17 +44,18 @@ namespace CapaPresentacion
         //Limpiar controles
         private void Limpiar()
         {
-            this.txtidEstudiante.Text = string.Empty;
-            this.txtNumeroEstudiante.Text = string.Empty;
-            this.txtCurso.Text = string.Empty;
+            this.txtCodigo.Text = string.Empty;
+            this.txtNombreAsignatura.Text = string.Empty;
+            this.txtCodigoAsignatura.Text = string.Empty;
         }
 
         //Habilitar controles
         private void Habilitar(bool valor)
         {
-            this.txtidEstudiante.ReadOnly = !valor;
-            this.txtNumeroEstudiante.ReadOnly = !valor;
-            this.txtCurso.ReadOnly = !valor;
+            this.txtCodigo.ReadOnly = !valor;
+            this.txtNombreAsignatura.ReadOnly = !valor;
+            this.txtCodigoAsignatura.ReadOnly = !valor;
+
         }
 
         //habilitar botones
@@ -84,60 +83,26 @@ namespace CapaPresentacion
         private void Ocultarcolumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+        //this.dataListado.Columns[1].Visible = false;
         }
 
         //Mostrar mostrar
         private void Mostrar()
         {
-            this.dataListado.DataSource = Nestudiantes.Mostrar();
+            this.dataListado.DataSource = Nasignaturas.Mostrar();
             this.Ocultarcolumnas();
-            lblTotal.Text = "Total de Estudiantes: " + Convert.ToString(dataListado.RowCount);
+            lblTotal.Text = "Total de Asignaturas: " + Convert.ToString(dataListado.RowCount);
         }
 
         //Buscar nombre
         private void BuscarNombre()
         {
-            this.dataListado.DataSource = Nestudiantes.Buscarnombre(this.txtBuscar.Text);
+            this.dataListado.DataSource = Nasignaturas.Buscarnombre(this.txtBuscar.Text);
             this.Ocultarcolumnas();
-            lblTotal.Text = "Total de Estudiantes: " + Convert.ToString(dataListado.RowCount);
+            lblTotal.Text = "Total de Asignaturas: " + Convert.ToString(dataListado.RowCount);
         }
 
-        private void frmEstudiantes_Load(object sender, EventArgs e)
-        {
-            this.Top = 0;
-            this.Left = 0;
-
-            this.Mostrar();
-            this.Habilitar(false);
-            this.Botones();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
-            {
-                DataGridViewCheckBoxCell chkeliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
-                chkeliminar.Value = !Convert.ToBoolean(chkeliminar.Value);
-            }
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chkeliminar_CheckedChanged(object sender, EventArgs e)
+        private void chkEliminar_CheckedChanged(object sender, EventArgs e)
         {
             if (chkEliminar.Checked)
             {
@@ -148,13 +113,33 @@ namespace CapaPresentacion
                 this.dataListado.Columns[0].Visible = false;
             }
         }
+    
 
-        private void btneliminar_Click(object sender, EventArgs e)
+
+        private void frmAsignaturas_Load(object sender, EventArgs e)
+        {
+            this.Top = 0;
+            this.Left = 0;
+
+            this.Mostrar();
+            this.Habilitar(false);
+            this.Botones();
+        }
+
+        private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
+            {
+                DataGridViewCheckBoxCell chkeliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
+                chkeliminar.Value = !Convert.ToBoolean(chkeliminar.Value);
+            }
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
             {
                 DialogResult Opcion;
-                Opcion = MessageBox.Show("¿Desea eliminar el Estudiante seleccionado?", "SYSCHOOL", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                Opcion = MessageBox.Show("¿Desea eliminar la Asignatura seleccionada?", "SYSCHOOL", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (Opcion == DialogResult.OK)
                 {
                     String codigo;
@@ -165,11 +150,11 @@ namespace CapaPresentacion
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             codigo = Convert.ToString(row.Cells[1].Value);
-                            rpta = Nestudiantes.Eliminar(Convert.ToInt32(codigo));
+                            rpta = Nasignaturas.Eliminar(Convert.ToInt32(codigo));
 
                             if (rpta.Equals("OK"))
                             {
-                                this.MensajeOk("Se ha eliminado el Estudiante");
+                                this.MensajeOk("Se ha eliminado la Asignatura");
                             }
                             else
                             {
@@ -187,12 +172,12 @@ namespace CapaPresentacion
             }
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             this.BuscarNombre();
         }
 
-        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             this.BuscarNombre();
         }
@@ -204,7 +189,7 @@ namespace CapaPresentacion
             this.Botones();
             this.Limpiar();
             this.Habilitar(true);
-            this.txtidEstudiante.Focus();
+            this.txtNombreAsignatura.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -219,31 +204,31 @@ namespace CapaPresentacion
             try
             {
                 string rpta = "";
-                if (this.txtidEstudiante.Text == string.Empty)
+                if (this.txtNombreAsignatura.Text == string.Empty)
                 {
                     MensajeError("Verifique que los datos marcados esten completos.");
-                    errorIcono.SetError(txtidEstudiante, "Ingrese el Nombre del Estudiante");
+                    errorIcono.SetError(txtNombreAsignatura, "Ingrese el Nombre de la Asignatura");
                 }
                 else
                 {
                     if (this.IsNuevo)
                     {
-                        rpta = Nestudiantes.Insertar(Convert.ToInt32(this.txtNumeroEstudiante.Text), Convert.ToInt32(this.txtCurso.Text), Convert.ToInt32(this.txtidusuario.Text));
+                        rpta = Nasignaturas.Insertar(this.txtNombreAsignatura.Text.Trim(), this.txtCodigo.Text.Trim());
                     }
                     else
                     {
-                        rpta = Nestudiantes.Editar(Convert.ToInt32(this.txtidEstudiante.Text), Convert.ToInt32(this.txtNumeroEstudiante.Text), Convert.ToInt32(this.txtCurso.Text), Convert.ToInt32(this.txtidusuario.Text));
+                        rpta = Nasignaturas.Editar(Convert.ToInt32(this.txtCodigoAsignatura.Text), this.txtNombreAsignatura.Text.Trim(), this.txtCodigo.Text.Trim());
                     }
 
                     if (rpta.Equals("OK"))
                     {
                         if (this.IsNuevo)
                         {
-                            this.MensajeOk("Se ha insertado un Estudiante.");
+                            this.MensajeOk("Se ha insertado una Asignatura.");
                         }
                         else
                         {
-                            this.MensajeOk("Se ha actualizado un Estudiante.");
+                            this.MensajeOk("Se ha actualizado una Asignatura.");
                         }
                     }
                     else
@@ -271,16 +256,5 @@ namespace CapaPresentacion
             this.Limpiar();
             this.Habilitar(false);
         }
-
-        private void btnEliminar_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuscar_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
-
-}
+    }

@@ -5,7 +5,6 @@ C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.dll
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.pdb
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
-C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
@@ -19,9 +18,65 @@ C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.pdb
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmCursos.resources
-C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmCursos.resources
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmRol.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdministrador.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAsignaturaprofesor.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdministrador.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetallesasignaturas.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAsignaturaprofesor.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmCursos.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmRol.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmProfesores.resources
+C:\Users\jonat\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAsignaturas.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetallesasignaturas.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmProfesores.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdministrador.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAsignaturas.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetallesasignaturas.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmAsignaturaprofesor.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmCursos.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmEstudiantes.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmPrincipal.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmProfesores.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmRol.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.frmUsuario.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

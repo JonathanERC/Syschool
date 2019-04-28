@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmCursos
+    partial class frmAdministrador
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
             this.chkeliminar = new System.Windows.Forms.CheckBox();
             this.btneliminar = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.btnguardar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtnombre_curso = new System.Windows.Forms.TextBox();
-            this.txtid_cursos = new System.Windows.Forms.TextBox();
+            this.txtid_usuario = new System.Windows.Forms.TextBox();
+            this.txtid_administrador = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
@@ -62,27 +62,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cursos";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(1, 1);
+            this.tabControl1.Location = new System.Drawing.Point(2, 1);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(506, 305);
-            this.tabControl1.TabIndex = 1;
+            this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
@@ -102,7 +91,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // datalistado
             // 
@@ -130,15 +118,26 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Administrador";
+            // 
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Location = new System.Drawing.Point(353, 99);
             this.lbltotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltotal.Name = "lbltotal";
-            this.lbltotal.Size = new System.Drawing.Size(83, 13);
+            this.lbltotal.Size = new System.Drawing.Size(114, 13);
             this.lbltotal.TabIndex = 4;
-            this.lbltotal.Text = "Total de cursos:";
+            this.lbltotal.Text = "Total de administrador:";
             // 
             // chkeliminar
             // 
@@ -165,10 +164,10 @@
             // 
             // btnbuscar
             // 
-            this.btnbuscar.Location = new System.Drawing.Point(257, 57);
+            this.btnbuscar.Location = new System.Drawing.Point(288, 57);
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(123, 22);
+            this.btnbuscar.Size = new System.Drawing.Size(116, 22);
             this.btnbuscar.TabIndex = 2;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
@@ -176,7 +175,7 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(57, 57);
+            this.txtbuscar.Location = new System.Drawing.Point(107, 56);
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(161, 20);
@@ -189,9 +188,9 @@
             this.label2.Location = new System.Drawing.Point(6, 63);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "Codigo de Usuario:";
             // 
             // tabPage2
             // 
@@ -265,8 +264,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtnombre_curso);
-            this.groupBox1.Controls.Add(this.txtid_cursos);
+            this.groupBox1.Controls.Add(this.txtid_usuario);
+            this.groupBox1.Controls.Add(this.txtid_administrador);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(2, 6);
@@ -276,23 +275,23 @@
             this.groupBox1.Size = new System.Drawing.Size(496, 167);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cursos";
+            this.groupBox1.Text = "Administrador";
             // 
-            // txtnombre_curso
+            // txtid_usuario
             // 
-            this.txtnombre_curso.Location = new System.Drawing.Point(181, 109);
-            this.txtnombre_curso.Margin = new System.Windows.Forms.Padding(2);
-            this.txtnombre_curso.Name = "txtnombre_curso";
-            this.txtnombre_curso.Size = new System.Drawing.Size(185, 20);
-            this.txtnombre_curso.TabIndex = 2;
+            this.txtid_usuario.Location = new System.Drawing.Point(144, 108);
+            this.txtid_usuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid_usuario.Name = "txtid_usuario";
+            this.txtid_usuario.Size = new System.Drawing.Size(150, 20);
+            this.txtid_usuario.TabIndex = 2;
             // 
-            // txtid_cursos
+            // txtid_administrador
             // 
-            this.txtid_cursos.Location = new System.Drawing.Point(109, 46);
-            this.txtid_cursos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtid_cursos.Name = "txtid_cursos";
-            this.txtid_cursos.Size = new System.Drawing.Size(76, 20);
-            this.txtid_cursos.TabIndex = 2;
+            this.txtid_administrador.Location = new System.Drawing.Point(90, 46);
+            this.txtid_administrador.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid_administrador.Name = "txtid_administrador";
+            this.txtid_administrador.Size = new System.Drawing.Size(95, 20);
+            this.txtid_administrador.TabIndex = 2;
             // 
             // label5
             // 
@@ -300,9 +299,9 @@
             this.label5.Location = new System.Drawing.Point(43, 111);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
+            this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Nombre del Curso:";
+            this.label5.Text = "Codigo de Usuario:";
             // 
             // label4
             // 
@@ -322,7 +321,7 @@
             // 
             this.ttmensaje.IsBalloon = true;
             // 
-            // frmCursos
+            // frmAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -331,10 +330,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "frmCursos";
+            this.Name = "frmAdministrador";
             this.ShowIcon = false;
-            this.Text = "SYSCHOOL - Cursos";
-            this.Load += new System.EventHandler(this.frmCursos_Load);
+            this.Text = "SYSCHOOL - Administrador";
+            this.Load += new System.EventHandler(this.frmAdministrador_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -350,29 +349,29 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView datalistado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.CheckBox chkeliminar;
         private System.Windows.Forms.Button btneliminar;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox chkeliminar;
-        private System.Windows.Forms.DataGridView datalistado;
-        private System.Windows.Forms.Label lbltotal;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtnombre_curso;
-        private System.Windows.Forms.TextBox txtid_cursos;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btnnuevo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtid_usuario;
+        private System.Windows.Forms.TextBox txtid_administrador;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ErrorProvider erroricono;
         private System.Windows.Forms.ToolTip ttmensaje;
-        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
