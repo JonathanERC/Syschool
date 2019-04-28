@@ -30,3 +30,35 @@ C:\Users\jrondon\source\Unicda\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CoreC
 C:\Users\jrondon\source\Unicda\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CopyComplete
 C:\Users\jrondon\source\Unicda\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.exe
 C:\Users\jrondon\source\Unicda\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe.config
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.Properties.Resources.resources
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.GenerateResource.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.exe
+C:\Users\DELL\Source\Repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe.config
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.exe
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\SYSCHOOL.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaDatos.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaNegocio.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\bin\Debug\CapaPresentacion.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csprojAssemblyReference.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.Properties.Resources.resources
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.GenerateResource.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CoreCompileInputs.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.csproj.CopyComplete
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.exe
+C:\Users\Albert Gil\source\repos\SYSCHOOL\SYSCHOOL\obj\Debug\SYSCHOOL.pdb
