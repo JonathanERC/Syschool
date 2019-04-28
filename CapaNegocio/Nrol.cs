@@ -9,46 +9,46 @@ using System.Data;
 
 namespace CapaNegocio
 {
-    public class Ncursos
+    public class Nrol
     {
-        //Metodo insertar clase Dcursos
-        public static string Insertar(string nombre_curso)
+        //Metodo insertar clase Ddetallesasignaturas
+        public static string Insertar(string descripcion)
         {
-            Dcursos obj = new Dcursos();
-            obj.Nombre_curso = nombre_curso;
+            Drol obj = new Drol();
+            obj.Descripcion = descripcion;
             return obj.Insertar(obj);
         }
 
         //Metodo editar
-        public static string Editar(int id_curso, string nombre_curso)
+        public static string Editar(int id_rol, string descripcion)
         {
-            Dcursos obj = new Dcursos();
-            obj.Id_curso = id_curso;
-            obj.Nombre_curso = nombre_curso;
+            Drol obj = new Drol();
+            obj.Id_rol = id_rol;
+            obj.Descripcion = descripcion;
             return obj.Editar(obj);
         }
 
         //Metodo eliminar
-        public static string Eliminar(int id_curso)
+        public static string Eliminar(int id_rol)
         {
-            Dcursos obj = new Dcursos();
-            obj.Id_curso = id_curso;
+            Drol obj = new Drol();
+            obj.Id_rol = id_rol;
             return obj.Eliminar(obj);
         }
 
         //Metodo mostrar
         public static DataTable Mostrar()
         {
-            return new Dcursos().Mostrar();
+            return new Drol().Mostrar();
         }
 
         //Metodo buscar_nombre
         public static DataTable Buscarnombre(string textobuscar)
         {
-            Dcursos obj = new Dcursos();
+            Drol obj = new Drol();
             obj.Textobuscar = textobuscar;
             return obj.Buscarnombre(obj);
-        }  
-
         }
     }
+}
+    

@@ -40,7 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Nadministrador.cs" />
+    <Compile Include="Nasignaturaprofesor.cs" />
+    <Compile Include="Nasignaturas.cs" />
     <Compile Include="Ncursos.cs" />
+    <Compile Include="Ndetallesasignaturas.cs" />
+    <Compile Include="Nestudiantes.cs" />
+    <Compile Include="Nnotasasignaturas.cs" />
+    <Compile Include="Nprofesores.cs" />
+    <Compile Include="Nrol.cs" />
+    <Compile Include="Nusuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
