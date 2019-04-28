@@ -10,3 +10,15 @@ C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csprojAsse
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\jrondon\source\Unicda\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\DELL\Source\Repos\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Albert Gil\source\repos\SYSCHOOL\CapaDatos\obj\Debug\CapaDatos.pdb

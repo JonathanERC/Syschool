@@ -10,33 +10,33 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    public class Dcursos
+    public class Drol
     {
-        private int _Id_curso;
-        private string _nombre_curso;
+        private int _Id_rol;
+        private string _descripcion;
 
         private string _textobuscar;
 
-        public int Id_curso { get => _Id_curso; set => _Id_curso = value; }
-        public string Nombre_curso { get => _nombre_curso; set => _nombre_curso = value; }
+        public int Id_rol { get => _Id_rol; set => _Id_rol = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
         public string Textobuscar { get => _textobuscar; set => _textobuscar = value; }
 
         //Constructor vacio
-        public Dcursos()
+        public Drol()
         {
 
         }
 
         //Constructor con parametros
-        public Dcursos(int Id_curso, string nombre_curso, string textobuscar)
+        public Drol(int Id_rol, string descripcion, string textobuscar)
         {
-            this.Id_curso = Id_curso;
-            this.Nombre_curso = nombre_curso;
+            this.Id_rol = Id_rol;
+            this.Descripcion = descripcion;
             this.Textobuscar = textobuscar;
         }
 
         //Metodo insertar
-        public string Insertar(Dcursos Curso)
+        public string Insertar(Drol Rol)
         {
             string rpta = "";
             SqlConnection sqlcon = new SqlConnection();
@@ -47,21 +47,21 @@ namespace CapaDatos
                 sqlcon.Open();
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
-                sqlcmd.CommandText = "spinsertar_cursos";
+                sqlcmd.CommandText = "spinsertar_rol";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter parId_curso = new SqlParameter();
-                parId_curso.ParameterName = "@id_curso";
-                parId_curso.SqlDbType = SqlDbType.Int;
-                parId_curso.Direction = ParameterDirection.Output;
-                sqlcmd.Parameters.Add(parId_curso);
+                SqlParameter parId_rol = new SqlParameter();
+                parId_rol.ParameterName = "@id_rol";
+                parId_rol.SqlDbType = SqlDbType.Int;
+                parId_rol.Direction = ParameterDirection.Output;
+                sqlcmd.Parameters.Add(parId_rol);
 
-                SqlParameter parnombre_curso = new SqlParameter();
-                parnombre_curso.ParameterName = "@nombre_curso";
-                parnombre_curso.SqlDbType = SqlDbType.VarChar;
-                parnombre_curso.Size = 50;
-                parnombre_curso.Value = Curso.Nombre_curso;
-                sqlcmd.Parameters.Add(parnombre_curso);
+                SqlParameter pardescripcion = new SqlParameter();
+                pardescripcion.ParameterName = "@descripcion";
+                pardescripcion.SqlDbType = SqlDbType.VarChar;
+                pardescripcion.Size = 50;
+                pardescripcion.Value = Rol.Descripcion;
+                sqlcmd.Parameters.Add(pardescripcion);
 
                 //Ejecutar comando
                 rpta = sqlcmd.ExecuteNonQuery() == 1 ? "Ok" : "No se Ingreso el Registro";
@@ -83,7 +83,7 @@ namespace CapaDatos
         }
 
         //Metodo editar
-        public string Editar(Dcursos Curso)
+        public string Editar(Drol Rol)
         {
             string rpta = "";
             SqlConnection sqlcon = new SqlConnection();
@@ -94,21 +94,21 @@ namespace CapaDatos
                 sqlcon.Open();
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
-                sqlcmd.CommandText = "speditar_cursos";
+                sqlcmd.CommandText = "speditar_rol";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter parId_curso = new SqlParameter();
-                parId_curso.ParameterName = "@id_curso";
-                parId_curso.SqlDbType = SqlDbType.Int;
-                parId_curso.Value = Curso.Id_curso;
-                sqlcmd.Parameters.Add(parId_curso);
+                SqlParameter parId_rol = new SqlParameter();
+                parId_rol.ParameterName = "@id_rol";
+                parId_rol.SqlDbType = SqlDbType.Int;
+                parId_rol.Value = Rol.Id_rol;
+                sqlcmd.Parameters.Add(parId_rol);
 
-                SqlParameter parnombre_curso = new SqlParameter();
-                parnombre_curso.ParameterName = "@nombre_curso";
-                parnombre_curso.SqlDbType = SqlDbType.VarChar;
-                parnombre_curso.Size = 50;
-                parnombre_curso.Value = Curso.Nombre_curso;
-                sqlcmd.Parameters.Add(parnombre_curso);
+                SqlParameter pardescripcion = new SqlParameter();
+                pardescripcion.ParameterName = "@descripcion";
+                pardescripcion.SqlDbType = SqlDbType.VarChar;
+                pardescripcion.Size = 50;
+                pardescripcion.Value = Rol.Descripcion;
+                sqlcmd.Parameters.Add(pardescripcion);
 
                 //Ejecutar comando
                 rpta = sqlcmd.ExecuteNonQuery() == 1 ? "Ok" : "No se Actualizo el Registro";
@@ -130,7 +130,7 @@ namespace CapaDatos
         }
 
         //Metodo eliminar
-        public string Eliminar(Dcursos Curso)
+        public string Eliminar(Drol Rol)
         {
             string rpta = "";
             SqlConnection sqlcon = new SqlConnection();
@@ -141,14 +141,14 @@ namespace CapaDatos
                 sqlcon.Open();
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
-                sqlcmd.CommandText = "speliminar_cursos";
+                sqlcmd.CommandText = "speliminar_rol";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter parId_curso = new SqlParameter();
-                parId_curso.ParameterName = "@id_curso";
-                parId_curso.SqlDbType = SqlDbType.Int;
-                parId_curso.Value = Curso.Id_curso;
-                sqlcmd.Parameters.Add(parId_curso);
+                SqlParameter parId_rol = new SqlParameter();
+                parId_rol.ParameterName = "@id_rol";
+                parId_rol.SqlDbType = SqlDbType.Int;
+                parId_rol.Value = Rol.Id_rol;
+                sqlcmd.Parameters.Add(parId_rol);
 
                 //Ejecutar comando
                 rpta = sqlcmd.ExecuteNonQuery() == 1 ? "Ok" : "No se Elimino el Registro";
@@ -172,14 +172,14 @@ namespace CapaDatos
         //Metodo mostrar
         public DataTable Mostrar()
         {
-            DataTable dtresultado = new DataTable("cursos");
+            DataTable dtresultado = new DataTable("rol");
             SqlConnection sqlcon = new SqlConnection();
             try
             {
                 sqlcon.ConnectionString = Conexion.Cn;
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
-                sqlcmd.CommandText = "spmostrar_cursos";
+                sqlcmd.CommandText = "spmostrar_rol";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter sqldat = new SqlDataAdapter(sqlcmd);
@@ -189,34 +189,28 @@ namespace CapaDatos
             {
                 dtresultado = null;
             }
-            finally
-            {
-                if (sqlcon.State == ConnectionState.Open)
-                {
-                    sqlcon.Close();
-                }
-            }
             return dtresultado;
+
         }
 
         //Metodo buscarnombre
-        public DataTable Buscarnombre(Dcursos Curso)
+        public DataTable Buscarnombre(Drol Rol)
         {
-            DataTable dtresultado = new DataTable("cursos");
+            DataTable dtresultado = new DataTable("rol");
             SqlConnection sqlcon = new SqlConnection();
             try
             {
                 sqlcon.ConnectionString = Conexion.Cn;
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlcon;
-                sqlcmd.CommandText = "spbuscar_cursos";
+                sqlcmd.CommandText = "spbuscar_rol";
                 sqlcmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter partextobuscar = new SqlParameter();
                 partextobuscar.ParameterName = "@textobuscar";
                 partextobuscar.SqlDbType = SqlDbType.VarChar;
                 partextobuscar.Size = 50;
-                partextobuscar.Value = Curso.Textobuscar;
+                partextobuscar.Value = Rol.Textobuscar;
                 sqlcmd.Parameters.Add(partextobuscar);
                 
                 SqlDataAdapter sqldat = new SqlDataAdapter(sqlcmd);
@@ -225,13 +219,6 @@ namespace CapaDatos
             catch (Exception ex)
             {
                 dtresultado = null;
-            }
-            finally
-            {
-                if (sqlcon.State == ConnectionState.Open)
-                {
-                    sqlcon.Close();
-                }
             }
             return dtresultado;
         }

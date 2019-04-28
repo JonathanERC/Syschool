@@ -41,6 +41,15 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Dusuarios.cs" />
+    <Compile Include="Dnotasasignaturas.cs" />
+    <Compile Include="Ddetallesasignaturas.cs" />
+    <Compile Include="Dasignaturaprofesor.cs" />
+    <Compile Include="Dasignaturas.cs" />
+    <Compile Include="Destudiantes.cs" />
+    <Compile Include="Dprofesores.cs" />
+    <Compile Include="Drol.cs" />
+    <Compile Include="Dadministrador.cs" />
     <Compile Include="Dcursos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
